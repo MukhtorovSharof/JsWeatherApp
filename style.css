@@ -43,5 +43,51 @@ header input {
   transition: 0.2s ease-out;
 }
 header input:focus {
-  background-color:rgba(255, 255, 255, 0.8)
+  background-color: rgba(255, 255, 255, 0.8);
+}
+main {
+  margin-top: 20vh;
+  padding: 25px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.location,
+.main-temp {
+  color: #fff;
+}
+.location .city, .country {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.location .date {
+  font-size: 16px;
+}
+.main-temp .temp, .gradus {
+  font-size: 100px;
+  font-weight: 900;
+  margin: 32px 0;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.6);
+}
+.main-temp .weather {
+  font-size: 32px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 15px;
+  text-shadow: 0px 3px rgba(0, 0, 0, 0.6);
+}
+.main-temp .high-low {
+  font-size: 24px;
+  font-weight: 500;
+
+}
+@media (max-width: 900px) {
+  .app-wrap {
+    grid-template-columns: 100%;
+  }
+  .main {
+    margin: 50px 0;
+  }
 }
